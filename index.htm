@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milyoncu</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        body{
+            background: rgb(68, 3, 190);
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="h-[100vh] w-[100vw] flex justify-center items-center">
+        <div class=" w-[500px] h-[550px] border-2 rounded-[50px] border-[#000] flex flex-col gap-6  items-center">
+            <h1 class="text-white text-3xl font-bold py-5">Ümumi bilik sualları</h1>
+            <div class="flex  flex-col items-center gap-4 px-3">
+                <h2 id="title" class="text-white font-medium text-xl"> Sual : <span id="say">1</span>/10 </h2>
+                 <h3 class=" text-white w-[100%] text-center font-bold text-2xl" id="questionsTitle"></h3>
+                <div class=" w-[100%] flex flex-col justify-center items-center text-white" id="suallar"></div>
+                <div class="w-[100%] text-center"> 
+                    <p class="w-full text-xl font-bold text-white my-3 py-2  rounded-full p-3 bg-blue-700  border-2" id="dogru"></p>
+                    <p class="w-full text-xl font-bold text-white my-3 py-2  rounded-full p-3 bg-blue-700  border-2" id="sehv"></p>
+                    <button id="reload" onclick="location.reload()" class="w-full text-xl font-bold text-white my-3 py-2 hidden  rounded-full p-3 bg-blue-700  border-2">Yeniden baslayin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
